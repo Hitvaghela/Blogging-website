@@ -1,4 +1,4 @@
-# MERN Blog V2
+# DailyWrite
 
 A full-stack blogging application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring Google OAuth authentication, CRUD operations, and a modern responsive design.
 
