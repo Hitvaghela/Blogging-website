@@ -1,0 +1,65 @@
+.comment-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 420px;
+    background-color: white;
+    z-index: 99;
+    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-xs) var(--spacing-md);
+    transition: right var(--transition-normal);
+    overflow-y: auto;
+  }
+  
+  .comment-sidebar--visible {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .comment-sidebar--hidden {
+    right: -420px;
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .comment-header__title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: var(--font-primary);
+  }
+  
+  .comment-header__close {
+    color: var(--text-secondary);
+    cursor: pointer;
+    margin-top: -8px;
+  }
+  
+  .comment-form {
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-sm);
+    position: relative;
+  }
+  
+  .comment-form__user-info {
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    max-height: 100px;
+    transition: max-height var(--transition-fast) ease-out;
+  }
+  
+  .comment-form__user-info--hidden {
+    max-height: 0;
+    transition: max-height var(--transition-fast) ease-in;
+    margin-bottom: 0;
+  }
+  
+  /* Continue with similar BEM naming for other elements */

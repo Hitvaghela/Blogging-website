@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap');
+
+:root {
+    --primary: #2563eb; /* Modern blue */
+    --primary-hover: #1d4ed8;
+    --text-dark: #1e293b;
+    --text-medium: #475569;
+    --text-light: #64748b;
+    --border-light: #e2e8f0;
+    --bg-light: #f8fafc;
+    --bg-hover: #f1f5f9;
+    --white: #ffffff;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Inclusive_profile_page {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-top-wrap {
+    border: 1px solid var(--border-light);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.profile-top-wrap span {
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.25px;
+}
+
+.profile-top-wrap a {
+    text-decoration: none;
+    color: var(--text-medium);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.profile-top-wrap a:hover {
+    color: var(--primary);
+    background-color: var(--bg-hover);
+}
+
+.Inclusive_profile_page ul {
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.Inclusive_profile_page ul li {
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    transition: var(--transition);
+}
+
+.Inclusive_profile_page ul li:last-child {
+    border-bottom: none;
+}
+
+.Inclusive_profile_page ul li:hover {
+    background-color: var(--bg-hover);
+}
+
+.Inclusive_profile_page ul li span {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.Inclusive_profile_page ul li div {
+    width: 222px;
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.btns_wrap {
+    display: flex;
+    padding: 1.5rem 0;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.btns_wrap button {
+    all: unset;
+}
+
+.profileEditBtn a, .changePassBtn a {
+    width: 160px;
+    border-radius: var(--radius-sm);
+    height: 46px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.925rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.profileEditBtn a {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--white);
+}
+
+.profileEditBtn a:hover {
+    background-color: var(--bg-hover);
+    transform: translateY(-1px);
+}
+
+.changePassBtn a {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.changePassBtn a:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+@media only screen and (max-width: 1030px) {
+    .Inclusive_profile_page {
+        width: 94%;
+        padding: 0 1rem;
+    }
+    
+    .Inclusive_profile_page ul li div {
+        width: 175px;
+        font-size: 0.85rem;
+    }
+    
+    .profileEditBtn a, .changePassBtn a {
+        width: 140px;
+        font-size: 0.875rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .profile-top-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+    
+    .Inclusive_profile_page ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.25rem;
+    }
+    
+    .Inclusive_profile_page ul li div {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .btns_wrap {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .profileEditBtn a, .changePassBtn a {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}
