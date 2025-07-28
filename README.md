@@ -35,8 +35,7 @@ Before running this application, make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mern-blog-v2.git
-cd mern-blog-v2
+git clone https://github.com/Hitvaghela/Blogging-website
 ```
 
 ### 2. Install Dependencies
@@ -225,7 +224,7 @@ cd Frontend && npm test
 
 If you have any questions or need help:
 
-1. Check the [Issues](https://github.com/yourusername/mern-blog-v2/issues) page
+1. Check the [Issues](https://github.com/Hitvaghela/Blogging-website/issues) page
 2. Create a new issue with detailed description
 3. Contact: hitvaghela3108@example.com
 
